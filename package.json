@@ -11,6 +11,7 @@
     "font-awesome": "4.4.0",
     "lodash": "3.10.1",
     "node-sass": "3.4.2",
+    "substance": "substance/substance#master",
     "substance-hub": "substance/hub#master",
     "substance-examples": "substance/examples#master"
   },
