@@ -1,0 +1,26 @@
+{
+  "name": "notepad",
+  "description": "Realtime notepad",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "browserify": "12.0.1",
+    "cheerio": "0.19.0",
+    "ejs": "2.3.4",
+    "express": "4.13.3",
+    "font-awesome": "4.4.0",
+    "lodash": "3.10.1",
+    "node-sass": "3.4.2",
+    "substance-hub": "substance/hub#master",
+    "substance-examples": "substance/examples#master"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-sass": "2.1.0",
+    "gulp-uglify": "1.5.1",
+    "through2": "2.0.0"
+  },
+  "scripts": {
+    "bundle": "gulp"
+  }
+}
