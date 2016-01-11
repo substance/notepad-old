@@ -4,6 +4,7 @@ var app = express();
 var port = process.env.PORT || 5000;
 var server = require('substance/util/server');
 var hub = require('substance-hub');
+var knexConfig = require('./db/knexfile');
 
 // Serve app in development mode
 // ----------------
@@ -17,7 +18,10 @@ app.use('/fonts', express.static(path.join(__dirname, 'node_modules/font-awesome
 // // Connect Substance realtime hub
 // ----------------
 
-hub.connect(app, port);
+hub(app, {
+	knex: knexConfig,
+	port: port
+});
 
 // Export app for requiring in test files
 module.exports = app;
